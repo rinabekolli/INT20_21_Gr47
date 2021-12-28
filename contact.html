@@ -30,7 +30,17 @@
     </section>
     <!-----------contact us --------->
     <section class="location">
+        <canvas id='canvas' class="gradient" width="450" height="50">
+            Our Location
+        </canvas>
+        <script>
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Our Location", 120, 30);
+        </script>
 
+        
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.21003858273!2d21.123707863609205!3d42.66637476673429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1sen!2s!4v1638003762936!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </section>
@@ -82,7 +92,7 @@
     </section>
 
     
-    
+
 
 <!--------Footer--------->
 <section class="footer">
@@ -108,7 +118,7 @@
             <img src="images/gmail.png">
         </a>
     </div>
-    <p>© ALL RIGHTS RESERVED</p>
+    <p>&copy;ALL RIGHTS RESERVED</p>
 
 </section>
 
