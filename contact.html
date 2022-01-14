@@ -73,20 +73,30 @@
             </div>
             <div class="contact-col">
 
-                <form action="">
-                    <input type="text" placeholder="Enter your name" required>
+                <form name="myForm" action=""  >
+                    <input type="text" name="fname" placeholder="Enter your name" >
                     <input type="email" id="email" placeholder="Enter your email address" required>
                     <input type="text" placeholder="Enter your subject" required>
                     <textarea row="8" placeholder="Message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    <button type="submit" value="Submit" class="hero-btn red-btn">Send Message</button>
+                    <button onclick="getLocation()" class="hero-btn red-btn">Show User Location</button>
                 </form>
-
-
-
-
-
-
+                <h3 id="koordinatat" style="color: rgb(6, 6, 44);"></h3>
             </div>
+            <script>
+                var x = document.getElementById("koordinatat")
+                
+                function getLocation() {
+                      if (navigator.geolocation) {
+                          navigator.geolocation.getCurrentPosition(shfaqPosition);
+                  } 
+                }
+            
+                function shfaqPosition(position) {
+                    x.innerHTML = "<br>Latitude: " + position.coords.latitude + 
+                         "  Longitude: " + position.coords.longitude;
+                }
+            </script>
         </div>
 
     </section>

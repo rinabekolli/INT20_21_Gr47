@@ -34,6 +34,7 @@ h1 {
                     <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="course.html">COURSE</a></li>
                     <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="blog.html">BLOG</a></li>
                     <li><a style="font-family: 'Roboto Condensed', sans-serif;" href="contact.html">CONTACT</a></li>
+
                 </ul>
             </div> 
             <i class="fa fa-bars" onclick="showMenu()"></i>  
@@ -42,14 +43,38 @@ h1 {
     </section>
     <!-----------about us content--------->
     <section class="about-us">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p1").hide(500);
+  });
+  $("#show").click(function(){
+    $("p1").show(500);
+  });
+});
+</script>
+</head>
+<body>
+
 
         <div class="row">
             <div class="about-col">
                 <h1>We are the world's largest university</h1>
-                <p>The institution's original buildings were the first in the country to be purpose-built for the professional training of teachers.<mark>The first cohort of 10 male student teachers </mark> had been taught in temporary premises in Nicholas Street from February 1840, 
-                    until increasing student numbers led to a move to further temporary accommodation in <span id="span-1">Bridge Street</span> later that year.
-                    <br> Many <span style="color:blue">millions</span> of pounds are continually invested in the accommodation and resources to enhance the student experience and there is a strong focus on making students feel supported and at home. </p>
+                <p1>The institution's original buildings were the first in the country to be purpose-built for the professional training of teachers.<mark>The first cohort of 10 male student teachers </mark> had been taught in temporary premises in Nicholas Street from February 1840, 
+                    until increasing student numbers led to a move to further temporary accommodation in <span id="span-1">Bridge Street</span> later.
+                    <svg height="200" width="500">
+                        <polyline points="0, 240 40, 25 60, 40 80, 120 120, 140 200, 180 500, 120 600, 5" style="fill:none;stroke:black;stroke-width:3" />
+                      </svg>
+                      <br>
+                      Our graphic with students durin 1990-2021
+                      <br>
+                    <br> Many <span style="color:blue">millions</span> of pounds are continually invested in the accommodation and resources to enhance the student experience and there is a strong focus on making students feel supported and at home. </p1>
+                    <br>
+                    <br>
                 <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                <button class="hero-btn red-btn" id="hide">Hide</button>
+<button class="hero-btn red-btn" id="show">Show</button>
             </div>
             <div class="about-col">
                 <img src="images/about.jpg">
@@ -57,71 +82,81 @@ h1 {
         </div>
         <br>
         <br>
-
         <section id="faq">
             <div class="faq">
                 <div class="question">
-                    <p>The minimum age to attend?&nbsp;&nbsp;</p>
+                    <p>What can I do with a degree from this program?&nbsp;&nbsp;</p>
                     <svg width="15" height="10" viewbox="0 0 42 25">
                         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
                     </svg>
                 </div>
                 <div class="answer">
-                    <p>THE MINIMUM AGE TO ATTEND THE FESTIVAL ALONE IS 16. YOUNGSTERS BELOW THE REQUIRED AGE SHOULD BE ACCOMPANIED BY THEIR PARENTS OR ANY OTHER GROWN RELATIVE.</p>
+                    <p>The discipline you study doesn't determine what you will do after graduation. Your degree is just one of the many important assets you bring to your future career. However, taking a look at some potential career paths for your program of study can be helpful for giving you ideas that you may not have considered otherwise.</p>
                 </div>
             </div>
         
             <div class="faq">    <div class="question">
-                <p> How do I get to the festival?&nbsp;&nbsp;</p>
+                <p> What is an average student class size?&nbsp;&nbsp;</p>
                 <svg width="15" height="10" viewbox="0 0 42 25">
                     <path d="M 3 3 L 21 21 L 39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
                 </svg>
             </div>
             <div class="answer">
-                <p> GERMIA NATIONAL PARK IS 20 MINUTES FROM THE CITY CENTER IF YOU DECIDE TO WALK. 
-                    YOU CAN ALSO USE THE CITY BUSSES WITH NUMBERS 4 AND 5, AND THAT WILL COST ONLY 0.50 CENTS TO TAKE YOU TO THE LOCATION. 
-                    ALSO LOCAL TAXIS WILL COST YOU UP TO 3 EUROS MAX FROM ANY PART OF THE CITY.
+                <p> An average student class size is 20 students.The institution's original buildings were the first in the country to be purpose-built for the professional training of teachers.The first cohort of 10 male student teachers had been taught in temporary premises in Nicholas Street from February 1840, 
+                    until increasing student numbers led to a move to further temporary accommodation.
                 </p>
             </div>
         </div>
-        
-        
-            <div class="faq">
-                <div class="question">
-                    <p> Can I work as a volunteer at the festival?&nbsp;&nbsp;</p>
-                    <svg width="15" height="10" viewbox="0 0 42 25">
-                        <path d="M 3 3 L 21 21 L 39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
-                    </svg>
-                </div>
-                <div class="answer">
-                    <p>
-                        YES, YOU CAN WORK AS A VOLUNTEER. 
-                        ALL THE INFORMATION WILL BE POSTED IN THE NIGHT PULSE FESTIVAL WEBSITE AND FACEBOOK PAGE,
-                        SO STAY TUNED TO BE PART OF THE BIGGEST FESTIVAL IN THE REGION.
-                     </p>
-                </div>
+        <div class="faq">
+            <div class="question">
+                <p> Do students actively work/study together and help each other?&nbsp;&nbsp;</p>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                    <path d="M 3 3 L 21 21 L 39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
             </div>
-        
-            <div class="faq">
-                <div class="question">
-                    <p>What's the age limit?&nbsp;&nbsp;</p>
-                    <svg width="15" height="10" viewbox="0 0 42 25">
-                        <path d="M 3 3 L 21 21 L 39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
-                    </svg>
-                </div>
-                <div class="answer">
-                    <p>
-                        A PERSON OF 16 YEARS OR OLDER IS CLASSIFIED AS AN ADULT AND IS ELIGIBLE TO ENTER THE VENUE ON THEIR OWN. 
-                    CHILDREN AT THE AGE OF 15 AND UNDER MUST BE ACCOMPANIED BY AN ADULT OVER THE AGE OF 18.
-                    </p>
-                </div>
+            <div class="answer">
+                <p>Yes students actively work/study together and help each other.The institution's original buildings were the first in the country to be purpose-built for the professional training of teachers.<mark>The first cohort of 10 male student teachers </mark> had been taught in temporary premises in Nicholas Street from February 1840, 
+                    until increasing student numbers led to a move to further temporary accommodation:&nbsp;</p>
+                 
             </div>
-        </section>
-        <script src="script.js"></script>
+        </div>
 
         
-<!--------Footer--------->
-<section class="footer">
+        </section>
+        <script src="script.js"></script>
+        <div class="full-img" id="fullimgbox">
+            <img src="images/7.jpg "id=fullimg>
+            <span onclick="closeFullImg()">X</span>
+        </div>
+       <div class="img-gallery">
+           <img src="images/7.jpg" onclick="openFullImg(this.src)">
+           <img src="images/2.jpg"onclick="openFullImg(this.src)">
+           <img src="images/6.jpg"onclick="openFullImg(this.src)">
+           <img src="images/4.jpg"onclick="openFullImg(this.src)">
+           <img src="images/certificate.jpg"onclick="openFullImg(this.src)">
+           <img src="images/banner.png"onclick="openFullImg(this.src)">
+           <img src="images/cambridge.jpg"onclick="openFullImg(this.src)">
+           <img src="images/3.jpg"onclick="openFullImg(this.src)">
+           <img src="images/1.jpg"onclick="openFullImg(this.src)">
+       </div>
+
+        <script>
+
+            var fullimgbox=documet.getElementById("fullimgbox");
+            var fullimg=documet.getElementById("fullimg");
+
+            function openFullImg(pic){
+                fullimgbox.style.display="flex";
+                fullimg.src=pic;
+            }
+
+            function closeFullImg(){
+                fullimgbox.stule.sidplay="none;"
+
+            }
+        </script>
+    <!--------Footer--------->
+    <section class="footer">
     <h4>About Us</h4>
     <p><i>“If you don’t like something change it.<br>
         If you can’t change it, change the way you think about it.”</i></p>
@@ -146,7 +181,7 @@ h1 {
     </div>
     <p>&copy; ALL RIGHTS RESERVED</p>
 
-</section>
+    </section>
 
 
 
